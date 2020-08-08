@@ -2,64 +2,52 @@ package studentdemos;
 
 import java.util.*;
 
-
 public class Student {
-	
-	
-	private String Rollno;
-	
-	private int Age;
-	
-	
-	public Student(String rollno,int age){
-		this.Rollno=rollno;
-		this.Age=age;
-		
-	}
-	
 
-	public String getRoll() {
-		return Rollno;
+	private String rollno;
+
+	private int age;
+
+	public Student(String rollno, int age) {
+		this.rollno = rollno;
+		this.age = age;
+
 	}
 
-	public void setRoll(String roll) {
-		this.Rollno = roll;
+	public String getroll() {
+		return rollno;
 	}
 
-	public int getAge() {
-		return Age;
+	public void setroll(String roll) {
+		this.rollno = roll;
+	}
+
+	public int getage() {
+		return age;
 	}
 
 	public void setAge(int age) {
-		this.Age = age;
+		this.age = age;
 	}
-	
-	
+
 	public int hashcode() {
-		return Age;
-		
+		int hash = rollno.hashCode();
+
+		return hash;
+
 	}
+
 	
+
 	public boolean equals(Student arg) {
-		if(this==arg) {
+		if (this == arg) {
 			return true;
 		}
-		
-		
-		Student that=(Student)arg;
-		boolean isequal=this.Rollno==that.Rollno;
+
+		Student that = (Student) arg;
+		boolean isequal = this.rollno == that.rollno;
 		return isequal;
-		
-			
+
 	}
-	
-
-
-	
-	
-	
-	
-	
-	
 
 }

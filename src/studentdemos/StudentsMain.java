@@ -14,9 +14,6 @@ public class StudentsMain {
 
 public void runApp() {
 	
-	try {
-	 	 
-			throw new AgeException();
 	
 
 
@@ -39,18 +36,15 @@ public void runApp() {
 	
 	while(iterator.hasNext()) {
 		Student student=iterator.next();
-		System.out.println("Age="+student.getAge());
+		System.out.println("Age="+student.getage()+" "   +  "rollno"  +student.getroll());
 	}
 	}
 
 	
 	
-	catch (Exception e){
-		System.out.println(e);
-	}
 }
 
-}
+
 
 
 
