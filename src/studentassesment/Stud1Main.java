@@ -29,8 +29,6 @@ public class Stud1Main {
 
 			List<String> r = new ArrayList<String>();
 			r.add(s.getRollNo());
-			
-			
 
 			for (String r1 : r) {
 				System.out.println(r1);
@@ -38,15 +36,14 @@ public class Stud1Main {
 			}
 
 			if (s.getAge() % 2 == 0) {
-				Set<Stud1> se = new HashSet<Stud1>();
-				se.add(a.get(k));
+				Set<Stud1> student = new HashSet<Stud1>();
+				student.add(s);
 
 			} else {
-				Set<Stud1> sl = new HashSet<Stud1>();
-				sl.add(a.get(k));
+				Set<Stud1> student1 = new HashSet<Stud1>();
+				student1.add(s);
 			}
 
-			
 		}
 
 	}
